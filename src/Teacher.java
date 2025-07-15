@@ -22,7 +22,7 @@ public class Teacher extends Person {
 
     @Override
     public String toString() {
-        return "Teacher" + getName() + "'s age is " + getAge() + ", id is " + getId() +
+        return "Teacher " + getName() + "'s age is " + getAge() + ", id is " + getId() +
                 ", subject is " + subject;
     }
 }

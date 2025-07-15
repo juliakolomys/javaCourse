@@ -72,6 +72,14 @@ public class Student extends Person {
         this.group = group;
     }
 
+    public double getAverageMark() {
+        if (marks == null || marks.isEmpty()) return 0.0;
+        int sum = 0;
+        for (int m : marks) sum += m;
+        return (double) sum / marks.size();
+    }
+
+
     @Override
     public String toString() {
         String result = getName() + " " + marks;
